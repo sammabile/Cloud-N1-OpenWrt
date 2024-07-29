@@ -8,6 +8,8 @@ on:
       - 'README.md'
       - 'script.sh'
       - 'config.sh'
+  #watch:
+    #types: [started]
   #schedule:
     #- cron: 0 8 * * 0
 
