@@ -1,9 +1,9 @@
 #!/bin/bash
 cd openwrt
 cat >> .config <<EOF
-CONFIG_TARGET_armvirt=y
-CONFIG_TARGET_armvirt_64=y
-CONFIG_TARGET_armvirt_64_DEVICE_generic=y
+CONFIG_TARGET_armsr=y
+CONFIG_TARGET_armsr_armv8=y
+CONFIG_TARGET_armsr_armv8_DEVICE_generic=y
 CONFIG_BRCMFMAC_PCIE=y
 CONFIG_BRCMFMAC_SDIO=y
 CONFIG_BRCMFMAC_USB=y
@@ -142,6 +142,8 @@ CONFIG_PACKAGE_kmod-tpm=y
 CONFIG_PACKAGE_kmod-udptunnel4=y
 CONFIG_PACKAGE_kmod-udptunnel6=y
 CONFIG_PACKAGE_kmod-usb-core=y
+CONFIG_PACKAGE_usb2
+CONFIG_PACKAGE_usb3
 CONFIG_PACKAGE_kmod-veth=y
 CONFIG_PACKAGE_kmod-wireguard=y
 CONFIG_PACKAGE_libarchive=y
